@@ -1,5 +1,6 @@
-body{
+html, body{
     box-sizing: border-box;
+    margin: 0;
 }
 .section1{
     background-color: #1F2937;
@@ -33,11 +34,10 @@ h2{
 .section2{
     display: flex;
     background-color: #1F2937;
-    gap: 50px;
 }
 .section2>*{
     display: flex;
-    flex: 1 1 50%;
+    flex: 0 1 50%;
     padding-bottom: 50px;;
 }
 h1{
@@ -45,19 +45,21 @@ h1{
     font-weight: 800;
     color: #F9FAF8;
 }
-button{
-    cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 8px;
+.btn{
     background-color: #3882f6;
     border: 1px solid #3882f6;
     color: white;
+}
+button{
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 8px;
 }
 .left{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 150px;
+    padding-left: 8%;
     justify-content: center;
     flex: auto;
     align-items: flex-start;
@@ -92,11 +94,11 @@ button{
 }
 .section4{
     display: flex;
-    margin: 0 auto;
     background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
     padding: 100px 0;
+    margin-bottom: 100px;
 }
 .quote{
     font-size: 36px;
@@ -115,4 +117,38 @@ button{
     align-self: flex-end;
     margin:0;
     padding-right: 100px;
+}
+.section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.bluecontainer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3882f6;
+    width: 900px;
+    padding: 50px 0;
+    border-radius: 8px;
+    color: #F9FAF8;
+}
+.second{
+    border: 2px solid white;
+}
+.action  > *{
+    margin: 0px;
+}
+.btncont{
+    display: flex;
+    align-items: flex-end;
+}
+footer{
+    background-color: #1F2937;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    color: #F9FAF8;
 }
